@@ -14,6 +14,6 @@ The idea was to use javascript to generate scalable incorporation of from one si
 * [Cat Photos](https://pngtree.com/freepng/cat_77044.html)
 
 ## To-Do
-* [] Fix the click so it disables clicking after mouse is moved while mousedown so it does not register a click after a drag.
+* [ ] Fix the click so it disables clicking after mouse is moved while mousedown so it does not register a click after a drag.
 
 # [Live Demo](https://javamajk.github.io/cat-click/)
