@@ -1,0 +1,259 @@
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.elasticstack {
+	position: relative;
+	margin: 90px auto;
+	padding: 0;
+	width: 640px;
+	height: 640px;
+	list-style: none;
+	-webkit-perspective: 1000px;
+	-webkit-perspective-origin: 50% 150%;
+	perspective: 1000px;
+    perspective-origin: 50% 150%;
+    /* border: 1px solid white; */
+}
+
+.no-js .elasticstack {
+	max-width: 1090px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+.elasticstack li {
+	position: absolute;
+	z-index: 1;
+	width: 640px;
+	height: 640px;
+	cursor: pointer;
+	-webkit-transform: translate3d(0,0,-180px);
+	transform: translate3d(0,0,-180px);
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.no-js .elasticstack li {
+	position: relative;
+	display: inline-block;
+	opacity: 1;
+	margin: 10px;
+	cursor: default;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.cat-frame {
+    /* display: none; */
+    position: relative;
+    width: 640px;
+    
+    height: 640px;
+    margin: 12px;
+    background: rgb(196, 202, 186);
+    border-radius: 21px;
+    box-shadow: -6px 10px 12px -1px rgba(0, 0, 0, 0.598);
+}
+
+.clicks-count {
+    position: absolute;
+    padding: 1rem;
+    width: 120px;
+    top: 0;
+    right: 0;
+    background: rgba(93, 155, 77);
+    border-top-right-radius: inherit;
+    color: rgb(70, 70, 70);
+    font-weight: 700;
+    text-align: center;
+}
+
+.speak-box {
+    position: absolute;
+    top: 240px;
+    left: 25px;
+    width: 210px;
+    height: auto;
+    min-height: 110px;
+    border-radius: 20%;
+    background: rgb(93, 155, 77, 0.995);
+    box-shadow: 0px 6px 12px -1px rgba(0, 0, 0, 0.105);
+    z-index: 3;
+    -webkit-animation: speak 3s cubic-bezier(.44, .05, .65, .94);
+    -webkit-transform-origin: 90%;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.speak-triangle {
+    position: absolute;
+    top: 220px;
+    left: 169px;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 70px solid rgba(79, 133, 65, 0.899);
+    transform: rotate(290deg);
+    z-index: 2;
+}
+
+.cat-text {
+    text-align: center;
+    padding: 2.3rem 0.5rem 2rem 0.5rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.35rem;
+    font-weight: 700;
+    transition: all 1.5s ease-in-out;
+}
+
+
+.cat-tail {
+    position: absolute;
+    top: 310px;
+    left: 355px;
+    width: 300px;
+    z-index: 0;
+}
+
+.cat-tail.wiggle {
+    -webkit-animation: wiggle 1.5s cubic-bezier(.03, .3, .78, .56);
+    -webkit-transform-origin: 10%;
+    -webkit-animation-iteration-count: 1;
+}
+
+.elasticstack li img.cat-picture {
+    position: relative;
+    height: auto;
+    max-height: 660px;
+    width: 620px;
+    z-index: 1;
+}
+
+.elasticstack li.animate {
+	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.elasticstack li.move-back {
+	/* http://matthewlein.com/ceaser/ */
+	-webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.470, 1); /* older webkit */
+	-webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.470, 1.515);
+	transition-timing-function: cubic-bezier(0.175, 0.885, 0.470, 1.515);
+}
+
+#slide-0 {
+    background: #c5cec5;
+}
+
+#slide-1 {
+    background: #cac5bf;
+}
+
+#slide-1 > div.speak-box {
+    top: 330px;
+    left: 95px;
+}
+
+#slide-1 > div.speak-triangle {
+    top: 310px;
+    left: 239px;
+}
+
+#slide-1 > img.cat-picture {
+    width: 640px;
+    left: -2px;
+    bottom: 20px;
+}
+
+#slide-2 {
+    background: #d5d7df;
+}
+
+#slide-2 > div.speak-box {
+    top: 330px;
+    left: 105px;
+}
+
+#slide-2 > div.speak-triangle {
+    top: 310px;
+    left: 249px;
+}
+
+#slide-2 > img.cat-picture {
+    bottom: -19px;
+    left: -10px;
+}
+
+#slide-3 {
+    background: #d2d3bd;
+}
+
+#slide-3 > div.speak-box {
+    top: 330px;
+    left: 65px;
+}
+
+#slide-3 > div.speak-triangle {
+    top: 310px;
+    left: 209px;
+}
+
+#slide-3 > img.cat-picture {
+    left: 19px;
+}
+
+#slide-4  {
+    background: #b7bdaa;
+}
+
+#slide-4 > div.speak-box {
+    top: 350px;
+    left: 25px;
+}
+
+#slide-4 > div.speak-triangle {
+    top: 330px;
+    left: 169px;
+}
+
+#slide-4 > img.cat-picture {
+    top: 18px;
+    transform: rotate(90deg);
+}
+
+@-webkit-keyframes speak {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: rotate(3deg);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@-webkit-keyframes wiggle {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    90% {
+        transform: translateY(0px);
+        transform: rotate(-1deg);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}

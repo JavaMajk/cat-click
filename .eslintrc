@@ -1,0 +1,37 @@
+{
+    "extends": "airbnb",
+    
+    "ecmaFeatures": {
+        "blockBindings": true,
+        "modules": true,
+        "superInFunctions": true
+      },
+    "env":{
+        "browser":true,
+        "node":true,
+        "jquery": true,
+        "jasmine": true
+    },
+    "rules": {
+        "comma-dangle": [
+            "error",
+            "never"
+        ],
+        "no-unused-vars": [
+            "error",
+            {
+                "vars": "local",
+                "args": "none"
+            }
+        ]
+    },
+    "globals": {
+        "it": false,
+        "expect": false,
+        "describe": false,
+        "beforeEach": false,
+        "Contact": false,
+        "AddressBook": false
+    }
+
+}
