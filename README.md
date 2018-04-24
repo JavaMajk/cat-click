@@ -1,9 +1,9 @@
 # Cat CLick
 
 ## Description
-This is one of those projects that I spent time on just for pure fun, experimenting with sliders, and at the end I incorporated an awesome drag effect provided by [Typamus.net](https://typamus.net)
+This is one of those projects that I spent time on just for pure fun, experimenting with sliders, and at the end I incorporated an awesome drag effect provided by [Typamus.net](https://www.typamus.net)
 
-This was one of the exercises as part of [Udacity and Google Web Development Scholarship Nanodegree Program](https://udacity.com).
+This was one of the exercises as part of [Udacity and Google Web Development Scholarship Nanodegree Program](https://www.udacity.com).
 The idea was to use javascript to generate scalable incorporation of from one simple cat picture with click registers, to be expandable to desired amount of cat pictures but not diaplsyed at the page all at one time and each with individual click counter.
 
 ## Credits & Resources
@@ -14,4 +14,6 @@ The idea was to use javascript to generate scalable incorporation of from one si
 * [Cat Photos](https://pngtree.com/freepng/cat_77044.html)
 
 ## To-Do
-- [] Fix the click so it disables clicking after mouse is moved while mousedown so it does not register a click after a drag.
+* [] Fix the click so it disables clicking after mouse is moved while mousedown so it does not register a click after a drag.
+
+# [Live Demo](https://javamajk.github.io/cat-click/)
